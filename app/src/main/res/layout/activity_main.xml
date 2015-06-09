@@ -17,6 +17,29 @@
             android:id="@+id/revealed_answer"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:gravity="center" />
-        </LinearLayout>
+            android:gravity="center"
+            android:text="@string/test_text"/>
+
+        <GridLayout
+            android:id="@+id/image_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="2">
+
+            <ImageView
+                android:id="@+id/img_1"
+                />
+            <ImageView
+                android:id="@+id/img_2"
+                />
+            <ImageView
+                android:id="@+id/img_3"
+                />
+            <ImageView
+                android:id="@+id/img_4"
+                />
+        </GridLayout>
+
+    </LinearLayout>
 </RelativeLayout>
