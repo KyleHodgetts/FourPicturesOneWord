@@ -6,6 +6,7 @@ import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -116,8 +117,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             player.setDataSource(afd.getFileDescriptor(),afd.getStartOffset(),afd.getLength());
             player.prepare();
             player.start();
+            Log.d("Round Won: ", "Sound reached");
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.d("Round Won: ", "No Sound");
         }
     }
 
